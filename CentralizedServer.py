@@ -54,7 +54,7 @@ def clientThread(connectionSocket):
 
                 # Do a keyword search.
                 if command[0] == "KEYWORD_SEARCH":
-                    term = command[1]
+                    term = command[1] # Term to Find
                     foundWho = ""
 
                     whoHasTerm = ";".join(s for s in fullDesc if term.lower() in s.lower())
