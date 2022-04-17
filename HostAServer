@@ -53,8 +53,21 @@ def quit():
     print("Successfully disconnected from client")
     return
 
-def retr(dataParam[2]):
+def retr(fileName): 
     
+    files = [file for file in os.listdir('.') if os.path.isfile(file)]
+    
+    for file in files:
+        if file == fileName:
+            fileName = os.path.join(os.getcwd(), fileName)
+            document = open(str(fileName), 'rb')
+            openDocument = document.read()
+            
+        if not isinstance(openDocument, bytes):
+            connection_socket.send(openDocument.encode('utf-8'))
+        else:
+            connection_socket.send(openDocument)
+            
     return
 
 while True:
