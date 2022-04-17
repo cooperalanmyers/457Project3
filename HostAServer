@@ -49,6 +49,8 @@ def quit():
     print("Successfully disconnected from client")
     return
 
+def retr():
+      return
 
 while True:
     connection_socket, addr = server_socket.accept()
