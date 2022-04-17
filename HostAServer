@@ -32,14 +32,18 @@ def command_menu(connection_socket):
            print ("\n\nWaiting for instruction")
            data = connection_socket.recv(BUFFER_SIZE).decode('utf-8')
       
+           dataParam = data.split()
+           # dataParam[0] is the command
+           # dataParam[2] is the location
+      
            # Print Requested Command to Screen
-           print ("\nRecieved instruction: {}".format(data))
+           print ("\nRecieved instruction: {}".format(dataParam[0]))
     
            # If Command Matches go to Following Helper Method
-           if data == "RETR":
-               retr()            
+           if dataParam[0] == "RETR":
+               retr(dataParam[2])            
                
-           elif data == "QUIT":
+           elif dataParam[0] == "QUIT":
                quit()
        
        
@@ -49,7 +53,7 @@ def quit():
     print("Successfully disconnected from client")
     return
 
-def retr():
+def retr(dataParam[2]):
     
     return
 
