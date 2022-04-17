@@ -43,8 +43,6 @@ def connect():
         #print(newData)
         
         
-        
-        
 # Anything Below is the Client Menu that Automatically Prompts
 
 
@@ -70,18 +68,9 @@ while True:
 
     elif prompt[:4].upper() == "RETR":
         retr()
-
-    elif prompt[:4].upper() == "STOR":
-        store_file()
-
-    elif prompt[:4].upper() == "PORT":
-        new_port_check()
         
     elif prompt[:4].upper() == "QUIT":
         quit()
     
-    #if isinstance(var, int)''
-
-
     else:
         print ("Command not recognized; please try again")
