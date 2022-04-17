@@ -37,7 +37,9 @@ def connect():
         
         client_socket.send(new_server_port.encode('utf-8'))
         
-        
+def retr():
+    return
+    
 # Anything Below is the Client Menu that Automatically Prompts
 
 
