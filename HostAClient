@@ -63,9 +63,6 @@ while True:
     if prompt[:7].upper() == "CONNECT":
         connect()
 
-    elif prompt[:4].upper() == "LIST":
-        list_files()
-
     elif prompt[:4].upper() == "RETR":
         retr()
         
