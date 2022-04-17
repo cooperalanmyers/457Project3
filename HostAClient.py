@@ -46,13 +46,10 @@ def connect():
 # Anything Below is the Client Menu that Automatically Prompts
 
 
-print ("""\n\nWelcome to the FTP client.
+print ("""\n\nWelcome to the P2P client.
         \n\nCall one of the following functions:
         \nCONNECT           : Connect to server
-        \nLIST              : List files
         \nRETR              : Retrieve file
-        \nSTOR              : Send file
-        \nPORT              : New Port Name
         \nQUIT              : Exit\n""")
 
 while True:
