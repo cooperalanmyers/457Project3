@@ -15,8 +15,6 @@ buffer_size = 1024
 # Creating Client Socket
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-new_client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
 # Connect Method From Client Input
 def connect():
     print ("CONNECT <server name/IP address> <server port>")
@@ -38,9 +36,6 @@ def connect():
         time.sleep(3)
         
         client_socket.send(new_server_port.encode('utf-8'))
-        
-        #newData = client_socket.recv(buffer_size).decode('utf-8')
-        #print(newData)
         
         
 # Anything Below is the Client Menu that Automatically Prompts
