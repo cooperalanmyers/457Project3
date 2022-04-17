@@ -50,7 +50,8 @@ def quit():
     return
 
 def retr():
-      return
+    
+    return
 
 while True:
     connection_socket, addr = server_socket.accept()
